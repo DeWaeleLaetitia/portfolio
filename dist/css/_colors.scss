@@ -1,0 +1,48 @@
+$white: #F2F2F2;
+$black: #121524;
+$gray: #767676;
+$primary: #476DD4;
+$muted: #CFD7EC; //Background from design
+$transparent: rgba(255, 255, 255, 0);
+$text: $black;
+
+$colors: (
+	'white'			: $white,
+	'black'			: $black,
+	'primary'		: $primary,
+	'gray'			: $gray,
+	'muted'			: $muted,
+	'transparent'	: $transparent,
+	);
+
+@each $index, $color in $colors{
+	.bg--#{$index}{
+		background-color: $color !important;
+		transition: all 0.2s ease;
+	}
+
+	.color--#{$index}{
+		color: $color !important;
+		transition: all 0.2s ease;
+
+		svg{
+			fill: initial !important;
+		}
+	}
+
+	.hover-color--#{$index}:hover{
+		color: $color !important;
+
+		svg{
+			fill: $color !important;
+		}
+	}
+
+	.hover-bg--#{$index}:hover{
+		background: $color !important;
+
+		svg{
+			fill: $color !important;
+		}
+	}
+}

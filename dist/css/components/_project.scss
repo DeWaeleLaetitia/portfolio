@@ -1,0 +1,19 @@
+.project{
+    &-img{
+        background-size: 100%;
+        transition: all .2s ease-in-out;
+    }
+
+    &:hover{
+        .project-img{
+            background-size: 110%;
+        }
+    }
+
+    &-title{
+        @media only screen and (max-width: $bp-sm) {
+            font-size: 48px;
+            margin-top: 8px;
+        }
+    }
+}

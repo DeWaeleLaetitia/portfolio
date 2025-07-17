@@ -1,0 +1,51 @@
+.nav{
+    font-size: 18px;
+
+    &-hamburger, &-hamburger::before, &-hamburger::after{
+        display: block;
+        height: 2px;
+        width: 24px;
+        background-color: $white;
+    }
+
+    &-hamburger{
+        position: relative;
+        border: none;
+        margin-right: 12px;
+
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+
+        &::before{
+            top: -6px;
+        }
+
+        &::after{
+            bottom: -6px;
+        }
+    }
+}
+
+.offcanvas-nav{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: -100vw;
+    background-color: $black;
+    transition: all .2s ease-in-out;
+
+
+    li a{
+        font-size: 64px;
+    }
+
+    &--open{
+        right: 0;
+    }
+}
