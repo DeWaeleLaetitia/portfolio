@@ -1,0 +1,18 @@
+<nav class="navbar" [class.scrolled]="scrolledPastHero">
+  <button class="hamburger" [class.open]="menuOpen" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="nav" [class.open]="menuOpen">
+    <li><a routerLink="/work" (click)="closeMenu()">Work</a></li>
+    <li><a href="#experience" (click)="closeMenu()">Experience</a></li>
+    <li>
+      <a href="assets/resume-2026.pdf" target="_blank" (click)="closeMenu()"
+        >Resume</a
+      >
+    </li>
+    <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+  </ul>
+</nav>

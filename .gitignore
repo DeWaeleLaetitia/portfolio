@@ -11,6 +11,16 @@
 # production
 /build
 
+# Angular build artifacts
+/dist
+/tmp
+/out-tsc
+.angular/
+/.angular/cache
+
+# Angular environment files (you already have most, but this is the common pattern)
+src/environments/*.local.ts
+
 # misc
 .DS_Store
 .env.local

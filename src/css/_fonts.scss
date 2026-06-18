@@ -1,0 +1,65 @@
+@import "colors";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syncopate:wght@400;700&display=swap');
+
+$ff-primary: "Inter", sans-serif;
+$ff-title: "Syncopate", sans-serif;
+
+.syncopate{
+    font-family: 'Syncopate', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	-webkit-text-stroke: 1px $text;
+  	paint-order: stroke fill;
+}
+
+.syncopate.color--primary{
+	-webkit-text-stroke: 1px $primary;
+}
+
+.syncopate.color--white{
+	-webkit-text-stroke: 1px $white;
+}
+
+
+.inter{
+    font-family: 'Inter', sans-serif;
+    font-family: $ff-primary !important;
+}
+
+.fw--regular{
+	font-weight: 400;
+}
+
+.fw--medium{
+	font-weight: 500;
+}
+
+.fw--light {
+    font-weight: 200;
+}
+
+.fw--bold{
+	font-weight: 700;
+}
+
+$fs-xs: 12px;
+$fs-s: 14px;
+$fs-m: 16px;
+$fs-l: 24px;
+$fs-xl: 32px;
+$fs-xxl: 48px;
+
+$fontsizes: (
+	'xs': 12px,
+	's': 14px,
+	'm': 16px,
+	'l': 24px,
+	'xl': 32px,
+	'xxl': 48px,
+);
+
+@each $index, $fontsize in $fontsizes{
+	.fs--#{$index}{
+		font-size: #{$fontsize};
+	}
+}
