@@ -1,0 +1,77 @@
+.timeline-line-container {
+    left: 0;
+    right: 0;
+    margin: auto;
+  
+
+    @media only screen and (max-width: 991px) {
+        margin: 0;
+    }
+}
+
+.timeline-line {
+    position: relative;
+    min-width: 100px;
+    padding: 0;
+
+        &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        inset: 0;            
+        background-image: url('/assets/grain-timeline.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        pointer-events: none;     
+        mix-blend-mode: screen;   
+    }
+}
+
+.timeline-item {
+    position: relative;
+    margin-top: 2rem;
+
+    &:last-of-type {
+        margin-bottom: 2rem;
+    }
+
+    &__date {
+        position: absolute;
+        top: -4px;
+        white-space: pre;
+        line-height: 1;
+        font-size: 32px;
+
+        @media only screen and (max-width: 1200px) {
+            font-size: 24px;
+        }
+        
+        @media only screen and (max-width: 991px) {
+            left: 8px !important;
+            top: 0;
+            font-size: 20px;
+        }   
+    }
+
+    &__title, &__description {
+        @media only screen and (max-width: 991px) {
+            padding-left: 125px;
+        }   
+    }
+
+    &__description {
+        margin-bottom: 0;
+    }
+}   
+
+.timeline-item-container {
+    &:nth-child(even) .timeline-item__date {
+        left: calc(100% + 24px + 15px); 
+    }
+
+    &:nth-child(odd) .timeline-item__date{
+        right: calc(100% + 24px + 15px); 
+    }
+}

@@ -1,0 +1,48 @@
+/*------------------------------------*\
+  Importeren
+\*------------------------------------*/
+@import "variables";
+
+@import "bootstrap/scss/bootstrap";
+
+@import "colors", "fonts", "utilities", "typography";
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $muted;
+  color: $text;
+  font-family: $ff-primary;
+  font-size: $fs-m;
+  line-height: 1.5;
+
+  &.menu-open {
+  overflow: hidden;
+  touch-action: none;
+}
+}
+
+
+  a.btn {
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    -webkit-text-stroke: 1px $white;
+    paint-order: stroke fill;
+    text-decoration: none;
+    background-color: $primary;
+    color: $white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0;
+  }
+
+  a.btn:hover {
+    background-color: lighten($primary, 15%);
+    -webkit-text-stroke: 1px $white;
+    color: $white;
+  }

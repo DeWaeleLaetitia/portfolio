@@ -1,0 +1,71 @@
+@use '../../css/variables' as *;
+@use '../../css/fonts' as *;
+
+.bg {
+    background-color: $primary;
+    position: relative;
+    display: block;
+    padding: 100px;
+
+    
+    @media (max-width: 769px) {
+        padding: 40px
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;            
+        background-image: url('/assets/grain-header.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        pointer-events: none;     
+        mix-blend-mode: screen;   
+    }
+}
+
+.contact-info {
+    &__email {
+        margin-top: 4rem;
+        text-decoration: underline 5px;
+        font-size: 48px;
+
+
+        @media only screen and (max-width: 1200px) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: 540px) {
+            font-size: 1.5rem;
+        }
+
+        & .rwd-break {
+            @media only screen and (min-width: 1601px) {
+                display: none;
+            }
+        }
+    }          
+}
+
+.contact-socials {
+    margin-top: auto;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        padding-left: 0;
+        margin-top: 200px;
+
+        li a:hover {
+            text-decoration: underline 3px;
+        }
+
+        & li:not(:first-child) a::before {
+            content:"•";
+            display: inline-block;
+            padding-right: 1rem;
+        }
+    }
+}

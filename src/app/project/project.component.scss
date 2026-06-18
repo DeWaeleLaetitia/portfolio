@@ -1,0 +1,62 @@
+:host-context(.projects) :host:nth-child(even) .col-lg-7 {
+@media only screen and (min-width: 992px) {
+  order: 2;
+}
+}
+
+:host-context(.projects) :host:nth-child(even) .col-lg-5 {
+  @media only screen and (min-width: 992px) {
+    order: 1;
+    
+    &>div {
+      padding-left: 0;
+    }
+  }
+}
+
+.read-more svg {
+    transition: all 0.2s ease;
+}
+
+.read-more:hover svg {
+    margin-left: 0.5rem;
+}
+
+.project-description {
+    white-space: pre-line;
+}
+
+// image loading skeleton
+.image-wrapper {
+  position: relative;
+}
+
+.project-image {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-image.loaded {
+  opacity: 1;
+}
+
+.image-skeleton {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.image-skeleton.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}

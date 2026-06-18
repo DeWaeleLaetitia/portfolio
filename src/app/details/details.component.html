@@ -1,0 +1,49 @@
+<app-nav></app-nav>
+<div *ngIf="project; else fallback" class="container py-s py-lg-l">
+  <a (click)="goBack()" class="btn mb-s me-2"> <svg
+      style="width: 1rem; transform: rotate(90deg) translateX(-1px)"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 20L12 4"
+        stroke="currentColor"
+        fill="none"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M5 13L12 20L19 13"
+        stroke="currentColor"
+        fill="none"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg> Back</a>
+  <a routerLink="/work" class="btn mb-s">View all my work</a>
+  <img
+    [src]="project.image"
+    [alt]="project.title"
+    class="project-image w-100 mb-s"
+  />
+  <h2 class="project-title syncopate">{{ project.title }}</h2>
+  <p class="project-task color--primary fw--bold">{{ project.task }}</p>
+  <p class="project-description" style="white-space: pre-line">
+    {{ project.description }}
+  </p>
+  <div class="project-additional" [innerHTML]="project.additional"></div>
+  <!-- Elfsight Before and After Slider | Project login page -->
+</div>
+
+<ng-template #fallback>
+  <div class="container py-l">
+    <p *ngIf="isLoading">Loading project details...</p>
+    <p *ngIf="notFound">Project not found. Please go back to the homepage.</p>
+  </div>
+</ng-template>
