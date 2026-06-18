@@ -1,0 +1,83 @@
+[
+  {
+    "id": "robaws",
+    "title": "Robaws",
+    "task": "UI/UX & Redesign",
+    "description": "I helped modernize the Robaws platform by improving both its user interface and user experience. I worked on everything from fixing small design inconsistencies to redesigning larger sections of the application. This included refining layouts, standardizing styling across components, and improving the overall visual consistency of the platform. The goal was to make the application feel cleaner, more modern, and easier to use, while ensuring that new designs fit seamlessly within the existing product.",
+    "image": "assets/projects/robaws.png",
+    "highlighted": true,
+    "additional": "<div class='elfsight-app-66745df9-8698-46e7-bbd3-f8317300d34b' data-elfsight-app-lazy></div>"
+  },
+  {
+    "id": "atalenta",
+    "title": "Atalenta",
+    "task": "Design & development @ Exsited",
+    "description": "I designed and developed the website for Atalenta, with a strong focus on creating a warm, approachable, and feminine visual identity with subtle elegant touches. I was responsible for translating the brand's values into a visually engaging website that felt both professional and personal. \n\nOn the development side, I implemented the site in a way that allows the owner to easily manage and update content through a CMS, ensuring the website can evolve independently without requiring technical knowledge. The project combined thoughtful design with practical functionality to create a flexible and maintainable online presence.",
+    "image": "assets/projects/atalenta.png",
+    "highlighted": true,
+    "additional": "<img class='w-50' src='assets/projects/atalenta_extra_1.png' alt='Atalenta'><img class='w-50' src='assets/projects/atalenta_extra_2.png' alt='Atalenta'>"
+  },
+  {
+    "id": "comforte",
+    "title": "Comforte",
+    "task": "Design @ Exsited",
+    "description": "With a focus on simplicity and usability, the Comforte website was designed to feel clean and minimal. It uses a CMS-driven structure that makes it easy to update, manage, and scale over time, while keeping the overall experience consistent and straightforward.",
+    "image": "assets/projects/comforte.png",
+    "highlighted": false,
+    "additional": "<img class='w-50' src='assets/projects/comforte_extra_1.png' alt='Comforte'>"
+  },
+  {
+    "id": "sydonios",
+    "title": "Sydonios",
+    "task": "Design @ Exsited",
+    "description": "The Sydonios website was designed to reflect a premium and sophisticated brand identity. An elegant visual style, refined typography, and carefully considered layouts were used to create a high-end user experience that conveys quality, craftsmanship, and exclusivity. The result is a polished digital presence that aligns with the brand's luxury positioning.",
+    "image": "assets/projects/sydonios.png",
+    "highlighted": false,
+    "additional": ""
+  },
+  {
+    "id": "vandenbussche",
+    "title": "Van den Bussche",
+    "task": "Development @ Exsited",
+    "description": "Faithfully translating a supplied design into a functional website, the Van den Bussche project required a detail-oriented approach to ensure the final result closely matched the original concept across all devices and screen sizes.",
+    "image": "assets/projects/vandenbussche.png",
+    "highlighted": true,
+    "additional": ""
+  },
+  {
+    "id": "wm-elan",
+    "title": "WM Elan",
+    "task": "Design @ Exsited",
+    "description": "Ease of navigation was a key focus for the WM Elan website. Through clear navigation, intuitive layouts, and a straightforward user experience, visitors can quickly find the information they need, even when they may not fully understand the language.",
+    "image": "assets/projects/wm-elan.png",
+    "highlighted": false,
+    "additional": ""
+  },
+    {
+    "id": "sinksen",
+    "title": "Sinksen",
+    "task": "Schoolproject @ Howest",
+    "description": "Sinksen was a school project in which we explored an Art Deco-inspired visual style and translated it into a cohesive design direction. The focus was on capturing the distinctive characteristics of Art Deco—such as geometric forms and decorative elegance—while ensuring these elements were applied consistently throughout the design without becoming overpowering.\n\nIn the development phase, I took the concept further by building out a responsive version of the design. This involved adapting the layout and visual hierarchy so that it would work smoothly across different screen sizes and devices. The challenge was to preserve the stylistic identity while maintaining usability and clarity, ensuring the final result felt both visually distinctive and functionally solid.",
+    "image": "assets/projects/sinksen.png",
+    "highlighted": false,
+    "additional": ""
+  },
+  {
+    "id": "dezeepfabriek",
+    "title": "De Zeepfabriek",
+    "task": "Schoolproject (groepswerk) @ Howest",
+    "description": "The Zeepfabriek project was a group assignment where we built a webshop using Mollie for payments. The design direction was playful and natural, reflecting the brand’s character through soft, organic visuals and a light, friendly feel. Alongside the design, we focused on making sure the webshop worked smoothly, with a clear flow from product selection to checkout.",
+    "image": "assets/projects/dezeepfabriek.png",
+    "highlighted": false,
+    "additional": ""
+  },
+  {
+    "id": "schleiper",
+    "title": "Schleiper",
+    "task": "Schoolproject @ Howest",
+    "description": "Schleiper was my first school project, where I designed a website for a local business and developed it into a working site. Through this project, I learned the basics of responsive design and how to adapt layouts so they work across different screen sizes.",
+    "image": "assets/projects/schleiper.png",
+    "highlighted": false,
+    "additional": ""
+  }
+]
