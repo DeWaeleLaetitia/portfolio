@@ -1,0 +1,68 @@
+<div class="container mb-m">
+  <div class="row">
+    <div
+      [class.col-lg-7]="!isWorkPage"
+      [class.mb-s]="isWorkPage"
+      class="col-12 d-flex align-items-center"
+    >
+ <div class="image-wrapper ratio ratio-16x9">
+  <div
+    class="image-skeleton"
+    [class.hidden]="imageLoaded"
+  ></div>
+
+  <img
+    class="project-image w-100"
+    [class.loaded]="imageLoaded"
+    [src]="project.image"
+    [alt]="project.title"
+    (load)="onImageLoad()"
+  />
+</div>
+    </div>
+
+    <div
+    [class.col-lg-5]="!isWorkPage"
+    class="col-12"
+    >
+      <div [class.ps-lg-m]="!isWorkPage" class="d-flex flex-column justify-content-center h-100 pt-4 pt-lg-0">
+        <h3 class="project-title syncopate">{{ project.title }}</h3>
+        <p class="project-task color--primary fw--bold mb-3">
+          {{ project.task }}
+        </p>
+        <p class="project-description">{{ project.description }}</p>
+        <a
+          [routerLink]="['/details', project.id]"
+          class="read-more color--primary fw--bold text-decoration-none syncopate"
+          >Read more
+          <svg
+            style="width: 1rem; transform: rotate(-90deg) translateX(1px)"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 20L12 4"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M5 13L12 20L19 13"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
