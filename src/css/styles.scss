@@ -20,6 +20,7 @@ body {
   font-family: $ff-primary;
   font-size: $fs-m;
   line-height: 1.5;
+  overflow-x: hidden;
 
   &.menu-open {
   overflow: hidden;
