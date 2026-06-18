@@ -10,8 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  max-height: 100vh;
+  min-height: 100vh;
   margin-top: -6rem;
   overflow: hidden;
 
@@ -119,7 +118,7 @@
 }
 
 .job-description {
-  max-width: calc(100% / 3 - 1rem);
+  max-width: calc(100% / 3 - 3rem);
   margin-left: auto;
   display: inline-block;
   vertical-align: top;
