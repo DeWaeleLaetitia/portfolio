@@ -6,7 +6,7 @@
     "description": "I helped modernize the Robaws platform by improving both its user interface and user experience. I worked on everything from fixing small design inconsistencies to redesigning larger sections of the application. This included refining layouts, standardizing styling across components, and improving the overall visual consistency of the platform. The goal was to make the application feel cleaner, more modern, and easier to use, while ensuring that new designs fit seamlessly within the existing product.",
     "image": "assets/projects/robaws.png",
     "highlighted": true,
-    "additional": "<div class='elfsight-app-66745df9-8698-46e7-bbd3-f8317300d34b' data-elfsight-app-lazy></div>"
+    "additional": "<img class='w-100' src='assets/projects/robaws_extra_1.png' alt='Robaws'>"
   },
   {
     "id": "atalenta",
